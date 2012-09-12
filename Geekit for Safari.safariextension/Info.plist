@@ -64,6 +64,8 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://raw.github.com/EriksRemess/geekit-safari/master/updatemanifest.plist</string>
 	<key>Website</key>
 	<string>http://geekli.st/Eriks</string>
 </dict>
