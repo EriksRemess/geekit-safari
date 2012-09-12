@@ -9,14 +9,13 @@ safari.application.addEventListener("popover", function(){
 	try {
 		document.getElementsByTagName('img')[0].style.display = "block"
 		var tab = safari.application.activeBrowserWindow.activeTab
-		document.body.innerHTML += '<iframe src="https://geekli.st/link/modal/?url='+escape(tab.url)+'&title='+escape(tab.title)+'" scrolling="no">Please Enable iFrames.</iframe>'
+		document.body.innerHTML += '<iframe src="https://geekli.st/link/modal/?url='+escape(tab.url)+'&title='+escape(tab.title)+'" scrolling="no"></iframe>'
 		document.getElementsByTagName('iframe')[0].addEventListener('load', function(){
-			document.getElementsByTagName('iframe')[0].className += " loaded"
+			document.getElementsByTagName('iframe')[0].className += "loaded"
 			document.getElementsByTagName('img')[0].style.display = "none"
-			document.body.className += " loaded"
 		})
 	} catch(e){}
 	document.getElementsByTagName('a')[0].addEventListener('click', function(){
-			safari.self.hide()
+		safari.self.hide()
 	})
 }, true)
