@@ -1,0 +1,7 @@
+body { width: 400px; height: 43px; margin:20px auto; -webkit-transition: height .5s linear; background-color: #F5F3F4; z-index: 900; box-shadow: 0 0 15px #7C7D7D; }
+body.loaded { height: 515px; }
+a { display: block; cursor: pointer; position:absolute; top: 10px; right: 10px; background: url("../img/closelabel.png") #F5F3F4 no-repeat center center; border-radius:12px; padding:3px; height:20px; width:20px; opacity: .3; -webkit-transition: opacity .2s linear; }
+a:hover { opacity:1; -webkit-transition: opacity .2s linear; }
+img { position: absolute; top: 50%; margin-top: -16px; left: 50%; margin-left: -16px; }
+iframe { width: 400px; height: 515px; border: none; opacity: 0; -webkit-transition: opacity .4s linear; }
+iframe.loaded { opacity: 1; }
